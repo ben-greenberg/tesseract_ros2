@@ -80,12 +80,12 @@ ament_package()
 install(TARGETS ${PACKAGE_LIBRARIES} EXPORT ${PROJECT_NAME}-targets DESTINATION lib)
 install(EXPORT ${PROJECT_NAME}-targets NAMESPACE tesseract:: DESTINATION lib/cmake/${PROJECT_NAME})
 
-install(
-  TARGETS ${PROJECT_NAME}
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-  RUNTIME DESTINATION bin
-)
+#install(
+#  TARGETS ${PROJECT_NAME}
+#  ARCHIVE DESTINATION lib
+#  LIBRARY DESTINATION lib
+#  RUNTIME DESTINATION bin
+#)
 
 # Mark cpp header files for installation
 install(DIRECTORY include/${PROJECT_NAME}
